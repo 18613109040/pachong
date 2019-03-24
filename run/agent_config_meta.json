@@ -1,0 +1,348 @@
+{
+  "keys": "G:\\with-dva\\config\\config.default.js",
+  "webpack": {
+    "resolve": {
+      "extensions": "G:\\with-dva\\config\\config.default.js",
+      "alias": {
+        "client": "G:\\with-dva\\config\\config.default.js",
+        "page": "G:\\with-dva\\config\\config.default.js"
+      }
+    },
+    "custom": {
+      "depth": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
+    },
+    "mode": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+    "output": {
+      "path": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "filename": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "chunkFilename": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "publicPath": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
+    },
+    "optimization": {
+      "splitChunks": {
+        "chunks": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+        "name": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+        "cacheGroups": {
+          "default": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+          "vendors": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+          "manifest": {
+            "test": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
+          }
+        }
+      },
+      "noEmitOnErrors": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
+    },
+    "devServer": {
+      "contentBase": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "port": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "noInfo": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "quiet": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "clientLogLevel": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "lazy": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "watchOptions": {
+        "aggregateTimeout": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
+      },
+      "headers": {
+        "X-Custom-Header": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
+      },
+      "stats": {
+        "colors": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+        "chunks": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
+      },
+      "publicPath": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "hot": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "G:\\with-dva\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "key": "G:\\with-dva\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "httpOnly": "G:\\with-dva\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "encrypt": "G:\\with-dva\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "useSession": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "ignoreJSON": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "cookieName": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "sessionName": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "headerName": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "bodyName": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "queryName": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "value": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.local.js",
+      "maxAge": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "includeSubdomains": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "value": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "value": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "policy": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "checkAddress": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "G:\\with-dva\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "G:\\with-dva\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "G:\\with-dva\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "G:\\with-dva\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "G:\\with-dva\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "templatePath": "G:\\with-dva\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.default.js",
+      "development": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "G:\\with-dva\\node_modules\\_egg-schedule@3.6.1@egg-schedule\\config\\config.default.js",
+      "file": "G:\\with-dva\\node_modules\\_egg-schedule@3.6.1@egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "G:\\with-dva\\node_modules\\_egg-schedule@3.6.1@egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "autoFields": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fieldSize": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fields": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fileSize": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "files": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "whitelist": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "tmpdir": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "G:\\with-dva\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js",
+    "ignoreDirs": "G:\\with-dva\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js",
+    "fastReady": "G:\\with-dva\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "G:\\with-dva\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js",
+    "overrideDefault": "G:\\with-dva\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js",
+    "maxDays": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "G:\\with-dva\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dir": "G:\\with-dva\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dynamic": "G:\\with-dva\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "preload": "G:\\with-dva\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "buffer": "G:\\with-dva\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "maxFiles": "G:\\with-dva\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js"
+  },
+  "view": {
+    "root": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "cache": "G:\\with-dva\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.local.js",
+    "defaultExtension": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "defaultViewEngine": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "mapping": "G:\\with-dva\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js"
+  },
+  "react": {
+    "middlewares": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "beautify": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "cache": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.local.js",
+    "static": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "doctype": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "assetHost": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "assetPath": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "placeHolder": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js"
+  },
+  "isomorphic": {
+    "polyfill": "G:\\with-dva\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic\\config\\config.default.js",
+    "universal": {
+      "assetsFilePath": "G:\\with-dva\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic\\config\\config.default.js",
+      "assets": "G:\\with-dva\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic\\config\\config.default.js"
+    },
+    "alias": {
+      "client": "G:\\with-dva\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic\\config\\config.default.js"
+    }
+  },
+  "router": {
+    "root": "G:\\with-dva\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "urlPrefix": "G:\\with-dva\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "exclude": "G:\\with-dva\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "mapping": "G:\\with-dva\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "entry": "G:\\with-dva\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "exts": "G:\\with-dva\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js"
+  },
+  "env": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js",
+  "name": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "proxy": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "protocolHeaders": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "ipHeaders": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "hostHeaders": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "pkg": {
+    "name": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "version": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "description": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "scripts": {
+      "start": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "debug": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "stop": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "dev": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "build": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "build:node": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+    },
+    "license": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "dependencies": {
+      "babel-polyfill": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "beidou": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "beidou-cli": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "dva": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "react": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "antd": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "react-dom": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "store": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "prop-types": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "react-hot-loader": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "@babel/plugin-syntax-dynamic-import": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "babel-plugin-dynamic-import-node": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "babel-plugin-import": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "react-loadable": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "babel-preset-beidou-client": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+    },
+    "gitHead": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+  },
+  "baseDir": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "HOME": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "rundir": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js",
+  "dump": {
+    "ignore": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "notFound": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "sitefile": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "middlewares": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "httpClient": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "encoding": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "formLimit": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "jsonLimit": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "strict": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "depth": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "parameterLimit": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+    }
+  },
+  "logger": {
+    "dir": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "encoding": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "env": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "level": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "consoleLevel": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "outputJSON": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "buffer": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "appLogName": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "coreLogName": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "agentLogName": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "errorLogName": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "request": {
+      "timeout": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "freeSocketTimeout": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "maxSockets": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "maxFreeSockets": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "freeSocketTimeout": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "maxSockets": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "maxFreeSockets": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "logging": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js",
+  "workerStartTimeout": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "serverTimeout": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "port": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+      "hostname": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+    "responseTimeout": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js"
+  },
+  "onClientError": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\config.default.js",
+  "client": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js",
+  "core": {
+    "name": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js"
+  }
+}

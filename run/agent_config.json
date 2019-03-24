@@ -1,0 +1,609 @@
+{
+  "config": {
+    "session": {
+      "maxAge": 86400000,
+      "key": "EGG_SESS",
+      "httpOnly": true,
+      "encrypt": true
+    },
+    "security": {
+      "domainWhiteList": [],
+      "protocolWhiteList": [],
+      "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
+      "csrf": {
+        "enable": true,
+        "useSession": false,
+        "ignoreJSON": false,
+        "cookieName": "csrfToken",
+        "sessionName": "csrfToken",
+        "headerName": "x-csrf-token",
+        "bodyName": "_csrf",
+        "queryName": "_csrf"
+      },
+      "xframe": {
+        "enable": true,
+        "value": "SAMEORIGIN"
+      },
+      "hsts": {
+        "enable": false,
+        "maxAge": 31536000,
+        "includeSubdomains": false
+      },
+      "dta": {
+        "enable": true
+      },
+      "methodnoallow": {
+        "enable": true
+      },
+      "noopen": {
+        "enable": true
+      },
+      "nosniff": {
+        "enable": true
+      },
+      "referrerPolicy": {
+        "enable": false,
+        "value": "no-referrer-when-downgrade"
+      },
+      "xssProtection": {
+        "enable": true,
+        "value": "1; mode=block"
+      },
+      "csp": {
+        "enable": false,
+        "policy": {}
+      },
+      "ssrf": {
+        "ipBlackList": null,
+        "checkAddress": null
+      },
+      "_protocolWhiteListSet": "<Set>"
+    },
+    "helper": {
+      "shtml": {}
+    },
+    "jsonp": {
+      "limit": 50,
+      "callback": [
+        "_callback",
+        "callback"
+      ],
+      "csrf": false
+    },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null,
+      "templatePath": "G:\\with-dva\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\lib\\event-sources\\default",
+        "development": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\lib\\event-sources\\development"
+      }
+    },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "egg-schedule.log"
+      }
+    },
+    "schedule": {
+      "directory": []
+    },
+    "multipart": {
+      "mode": "stream",
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": "100kb",
+      "fields": 10,
+      "fileSize": "10mb",
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null,
+      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\beidou-example-with-dva",
+      "cleanSchedule": {
+        "cron": "0 30 4 * * *"
+      }
+    },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/public/",
+      "dir": "G:\\with-dva\\app\\public",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000
+    },
+    "view": {
+      "root": "G:\\with-dva\\app\\views,G:\\with-dva\\client",
+      "cache": false,
+      "defaultExtension": ".jsx",
+      "defaultViewEngine": "react",
+      "mapping": {}
+    },
+    "react": {
+      "middlewares": [
+        "cache",
+        "initialprops",
+        "redux",
+        "partial",
+        "render",
+        "beautify",
+        "doctype"
+      ],
+      "beautify": false,
+      "cache": false,
+      "static": false,
+      "doctype": "<!DOCTYPE html>",
+      "assetHost": "",
+      "assetPath": "/build/",
+      "placeHolder": "<!--$render$-->"
+    },
+    "webpack": {
+      "custom": {
+        "depth": 1
+      },
+      "mode": "development",
+      "output": {
+        "path": "G:\\with-dva\\build",
+        "filename": "[name].js?[hash]",
+        "chunkFilename": "[name].js",
+        "publicPath": "/build/"
+      },
+      "resolve": {
+        "extensions": [
+          ".json",
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ],
+        "alias": {
+          "client": "G:\\with-dva\\client",
+          "page": "G:\\with-dva\\client\\page"
+        }
+      },
+      "optimization": {
+        "splitChunks": {
+          "chunks": "all",
+          "name": "manifest",
+          "cacheGroups": {
+            "default": false,
+            "vendors": false,
+            "manifest": {
+              "test": "/[\\\\\\/]node_modules[\\\\\\/]/"
+            }
+          },
+          "hidePathInfo": false,
+          "minSize": 10000,
+          "minChunks": 1,
+          "maxAsyncRequests": null,
+          "automaticNameDelimiter": "\\x7e",
+          "maxInitialRequests": null
+        },
+        "noEmitOnErrors": true
+      },
+      "devServer": {
+        "contentBase": false,
+        "port": 6002,
+        "noInfo": true,
+        "quiet": false,
+        "clientLogLevel": "warning",
+        "lazy": false,
+        "watchOptions": {
+          "aggregateTimeout": 300
+        },
+        "headers": {
+          "X-Custom-Header": "yes"
+        },
+        "stats": {
+          "colors": true,
+          "chunks": false
+        },
+        "publicPath": "/build/",
+        "hot": true
+      }
+    },
+    "isomorphic": {
+      "polyfill": true,
+      "universal": {
+        "assetsFilePath": "G:\\with-dva\\.isomorphic\\assets.json",
+        "assets": [
+          ".sass",
+          ".scss",
+          ".less",
+          ".css",
+          ".bmp",
+          ".gif",
+          ".jpg",
+          ".jpeg",
+          ".png",
+          ".webp",
+          ".ico",
+          ".woff",
+          ".woff2",
+          ".svg",
+          ".svgz",
+          ".otf",
+          ".tif",
+          ".tiff",
+          ".ttf",
+          ".eot",
+          ".mid",
+          ".midi"
+        ]
+      },
+      "alias": {
+        "client": "G:\\with-dva\\client"
+      }
+    },
+    "router": {
+      "root": "/",
+      "urlPrefix": "/",
+      "exclude": "_*",
+      "mapping": null,
+      "entry": null,
+      "exts": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "env": "local",
+    "name": "beidou-example-with-dva",
+    "keys": "<String len: 6>",
+    "proxy": false,
+    "protocolHeaders": "x-forwarded-proto",
+    "ipHeaders": "x-forwarded-for",
+    "hostHeaders": "",
+    "pkg": {
+      "name": "beidou-example-with-dva",
+      "version": "2.0.5",
+      "description": "Beidou example with dva",
+      "scripts": {
+        "start": "beidou start",
+        "debug": "beidou debug",
+        "stop": "beidou stop",
+        "dev": "beidou dev",
+        "build": "beidou build",
+        "build:node": "beidou build --target=node"
+      },
+      "license": "MIT",
+      "dependencies": {
+        "babel-polyfill": "^6.26.0",
+        "beidou": "^2.0.5",
+        "beidou-cli": "^2.0.1",
+        "dva": "^2.4.1",
+        "react": "^16.8.5",
+        "antd": "^3.15.1",
+        "react-dom": "^16.8.5",
+        "store": "^2.0.12",
+        "prop-types": "^15.7.2",
+        "react-hot-loader": "^4.8.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "babel-plugin-dynamic-import-node": "^2.2.0",
+        "babel-plugin-import": "^1.11.0",
+        "react-loadable": "^5.3.1",
+        "babel-preset-beidou-client": "^2.0.1"
+      },
+      "gitHead": "b601b857e2d005cdad7cb7b73462a7e02f23f8e9"
+    },
+    "baseDir": "G:\\with-dva",
+    "HOME": "C:\\Users\\Administrator",
+    "rundir": "G:\\with-dva\\run",
+    "dump": {
+      "ignore": "<Set>"
+    },
+    "confusedConfigurations": {
+      "bodyparser": "bodyParser",
+      "notFound": "notfound",
+      "sitefile": "siteFile",
+      "middlewares": "middleware",
+      "httpClient": "httpclient"
+    },
+    "notfound": {
+      "pageUrl": ""
+    },
+    "siteFile": {
+      "/favicon.ico": "<Buffer len: 6463>"
+    },
+    "bodyParser": {
+      "enable": true,
+      "encoding": "utf8",
+      "formLimit": "100kb",
+      "jsonLimit": "100kb",
+      "strict": true,
+      "queryString": {
+        "arrayLimit": 100,
+        "depth": 5,
+        "parameterLimit": 1000
+      }
+    },
+    "logger": {
+      "dir": "G:\\with-dva\\logs\\beidou-example-with-dva",
+      "encoding": "utf8",
+      "env": "local",
+      "level": "INFO",
+      "consoleLevel": "INFO",
+      "disableConsoleAfterReady": false,
+      "outputJSON": false,
+      "buffer": true,
+      "appLogName": "beidou-example-with-dva-web.log",
+      "coreLogName": "egg-web.log",
+      "agentLogName": "egg-agent.log",
+      "errorLogName": "common-error.log",
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
+      "type": "agent"
+    },
+    "httpclient": {
+      "enableDNSCache": false,
+      "dnsCacheLookupInterval": 10000,
+      "dnsCacheMaxLength": 1000,
+      "request": {
+        "timeout": 5000
+      },
+      "httpAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "httpsAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      }
+    },
+    "meta": {
+      "enable": true,
+      "logging": false
+    },
+    "coreMiddleware": [
+      "meta",
+      "siteFile",
+      "notfound",
+      "bodyParser",
+      "overrideMethod"
+    ],
+    "workerStartTimeout": 600000,
+    "serverTimeout": null,
+    "cluster": {
+      "listen": {
+        "path": "",
+        "port": 7001,
+        "hostname": ""
+      }
+    },
+    "clusterClient": {
+      "maxWaitTime": 60000,
+      "responseTimeout": 60000
+    },
+    "onClientError": null,
+    "client": "G:\\with-dva\\client",
+    "core": {
+      "name": "Beidou"
+    },
+    "coreMiddlewares": "~config~coreMiddleware",
+    "appMiddlewares": [],
+    "appMiddleware": "~config~appMiddlewares"
+  },
+  "plugins": {
+    "session": {
+      "enable": true,
+      "package": "egg-session",
+      "name": "session",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-session@3.1.0@egg-session",
+      "version": "3.1.0"
+    },
+    "security": {
+      "enable": true,
+      "package": "egg-security",
+      "name": "security",
+      "dependencies": [],
+      "optionalDependencies": [
+        "session"
+      ],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security",
+      "version": "2.5.0"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
+      "version": "2.0.0"
+    },
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
+      "version": "2.1.0"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher",
+      "version": "3.1.0"
+    },
+    "schedule": {
+      "enable": true,
+      "package": "egg-schedule",
+      "name": "schedule",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-schedule@3.6.1@egg-schedule",
+      "version": "3.6.1"
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [
+        "schedule"
+      ],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart",
+      "version": "2.4.0"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-development@2.4.2@egg-development",
+      "version": "2.4.2"
+    },
+    "logrotator": {
+      "enable": true,
+      "package": "egg-logrotator",
+      "name": "logrotator",
+      "dependencies": [
+        "schedule"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator",
+      "version": "3.0.7"
+    },
+    "static": {
+      "enable": true,
+      "package": "egg-static",
+      "name": "static",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-static@2.2.0@egg-static",
+      "version": "2.2.0"
+    },
+    "view": {
+      "enable": true,
+      "package": "egg-view",
+      "name": "view",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
+      "path": "G:\\with-dva\\node_modules\\_egg-view@2.1.2@egg-view",
+      "version": "2.1.2"
+    },
+    "beidouView": {
+      "enable": true,
+      "package": "beidou-view",
+      "name": "beidouView",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
+      "path": "G:\\with-dva\\node_modules\\_beidou-view@2.0.1@beidou-view",
+      "version": "2.0.1"
+    },
+    "react": {
+      "enable": true,
+      "package": "beidou-view-react",
+      "name": "react",
+      "dependencies": [
+        "beidouView"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
+      "path": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react",
+      "version": "2.0.1"
+    },
+    "webpack": {
+      "enable": true,
+      "package": "beidou-webpack",
+      "env": [
+        "local",
+        "unittest"
+      ],
+      "name": "webpack",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
+      "path": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack",
+      "version": "2.0.5"
+    },
+    "isomorphic": {
+      "enable": true,
+      "package": "beidou-isomorphic",
+      "name": "isomorphic",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
+      "path": "G:\\with-dva\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic",
+      "version": "2.0.1"
+    },
+    "router": {
+      "enable": true,
+      "package": "beidou-router",
+      "name": "router",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
+      "path": "G:\\with-dva\\node_modules\\_beidou-router@2.0.1@beidou-router",
+      "version": "2.0.1"
+    }
+  }
+}

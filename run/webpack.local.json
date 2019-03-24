@@ -1,0 +1,433 @@
+{
+  "mode": "development",
+  "output": {
+    "path": "G:\\with-dva\\build",
+    "filename": "[name].js?[hash]",
+    "chunkFilename": "[name].js",
+    "publicPath": "/build/"
+  },
+  "resolve": {
+    "extensions": [
+      ".json",
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ],
+    "alias": {
+      "client": "G:\\with-dva\\client",
+      "page": "G:\\with-dva\\client\\page"
+    }
+  },
+  "optimization": {
+    "splitChunks": {
+      "chunks": "all",
+      "name": "manifest",
+      "cacheGroups": {
+        "default": false,
+        "vendors": false,
+        "manifest": {
+          "test": "/[\\\\\\/]node_modules[\\\\\\/]/"
+        }
+      },
+      "hidePathInfo": false,
+      "minSize": 10000,
+      "minChunks": 1,
+      "maxAsyncRequests": null,
+      "automaticNameDelimiter": "~",
+      "maxInitialRequests": null
+    },
+    "noEmitOnErrors": true
+  },
+  "devServer": {
+    "contentBase": false,
+    "port": 6002,
+    "noInfo": true,
+    "quiet": false,
+    "clientLogLevel": "warning",
+    "lazy": false,
+    "watchOptions": {
+      "aggregateTimeout": 300
+    },
+    "headers": {
+      "X-Custom-Header": "yes"
+    },
+    "stats": {
+      "colors": true,
+      "chunks": false
+    },
+    "publicPath": "/build/",
+    "hot": true
+  },
+  "bail": false,
+  "devtool": "eval-source-map",
+  "context": "G:\\with-dva",
+  "entry": {
+    "router": [
+      "G:\\with-dva\\node_modules\\_webpack-dev-server@3.2.1@webpack-dev-server\\client\\index.js?http://0.0.0.0:6002",
+      "G:\\with-dva\\node_modules\\_webpack@4.29.6@webpack\\hot\\only-dev-server.js",
+      "G:\\with-dva\\client\\router.jsx"
+    ],
+    "index": [
+      "G:\\with-dva\\node_modules\\_webpack-dev-server@3.2.1@webpack-dev-server\\client\\index.js?http://0.0.0.0:6002",
+      "G:\\with-dva\\node_modules\\_webpack@4.29.6@webpack\\hot\\only-dev-server.js",
+      "G:\\with-dva\\client\\index.jsx"
+    ]
+  },
+  "module": {
+    "strictExportPresence": true,
+    "rules": [
+      {
+        "test": "/\\.(js|jsx|ts|tsx|mjs)$/",
+        "exclude": "/node_modules/",
+        "use": {
+          "loader": "G:\\with-dva\\node_modules\\_babel-loader@8.0.5@babel-loader\\lib\\index.js",
+          "options": {
+            "babelrc": true,
+            "presets": [
+              [
+                "G:\\with-dva\\node_modules\\_babel-preset-beidou-client@2.0.1@babel-preset-beidou-client\\index.js",
+                {}
+              ]
+            ],
+            "cacheDirectory": true,
+            "compact": false,
+            "highlightCode": true
+          }
+        }
+      },
+      {
+        "test": "/\\.css$/",
+        "exclude": "/\\.m(odule)?\\.css$/",
+        "loader": [
+          {
+            "loader": "G:\\with-dva\\node_modules\\_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_style-loader@0.19.1@style-loader\\index.js",
+            "options": {
+              "hmr": true
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_css-loader@0.28.11@css-loader\\index.js",
+            "options": {
+              "importLoaders": 1,
+              "minimize": false,
+              "sourceMap": true,
+              "modules": false
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_postcss-loader@2.1.6@postcss-loader\\lib\\index.js",
+            "options": {
+              "ident": "postcss"
+            }
+          }
+        ]
+      },
+      {
+        "test": "/\\.m(odule)?\\.css$/",
+        "loader": [
+          {
+            "loader": "G:\\with-dva\\node_modules\\_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_style-loader@0.19.1@style-loader\\index.js",
+            "options": {
+              "hmr": true
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_css-loader@0.28.11@css-loader\\index.js",
+            "options": {
+              "importLoaders": 1,
+              "minimize": false,
+              "sourceMap": true,
+              "modules": true,
+              "localIdentName": "[local]_[hash:base64:5]"
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_postcss-loader@2.1.6@postcss-loader\\lib\\index.js",
+            "options": {
+              "ident": "postcss"
+            }
+          }
+        ]
+      },
+      {
+        "test": "/\\.less$/",
+        "exclude": "/\\.m(odule)?\\.less$/",
+        "use": [
+          {
+            "loader": "G:\\with-dva\\node_modules\\_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_style-loader@0.19.1@style-loader\\index.js",
+            "options": {
+              "hmr": true
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_css-loader@0.28.11@css-loader\\index.js",
+            "options": {
+              "importLoaders": 1,
+              "minimize": false,
+              "sourceMap": true,
+              "modules": false
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_postcss-loader@2.1.6@postcss-loader\\lib\\index.js",
+            "options": {
+              "ident": "postcss"
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_less-loader@4.1.0@less-loader\\dist\\cjs.js",
+            "options": {
+              "javascriptEnabled": true
+            }
+          }
+        ]
+      },
+      {
+        "test": "/\\.m(odule)?\\.less$/",
+        "use": [
+          {
+            "loader": "G:\\with-dva\\node_modules\\_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_style-loader@0.19.1@style-loader\\index.js",
+            "options": {
+              "hmr": true
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_css-loader@0.28.11@css-loader\\index.js",
+            "options": {
+              "importLoaders": 1,
+              "minimize": false,
+              "sourceMap": true,
+              "modules": true,
+              "localIdentName": "[local]_[hash:base64:5]"
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_postcss-loader@2.1.6@postcss-loader\\lib\\index.js",
+            "options": {
+              "ident": "postcss"
+            }
+          },
+          {
+            "loader": "G:\\with-dva\\node_modules\\_less-loader@4.1.0@less-loader\\dist\\cjs.js",
+            "options": {
+              "javascriptEnabled": true
+            }
+          }
+        ]
+      },
+      {
+        "test": [
+          "/\\.bmp$/",
+          "/\\.gif$/",
+          "/\\.jpe?g$/",
+          "/\\.png$/",
+          "/\\.webp$/"
+        ],
+        "loader": "G:\\with-dva\\node_modules\\_url-loader@0.6.2@url-loader\\index.js",
+        "options": {
+          "limit": 10000,
+          "name": "[name]-[hash:5].[ext]"
+        }
+      },
+      {
+        "test": [
+          "/\\.ico$/",
+          "/\\.svgz?$/",
+          "/\\.woff2?$/",
+          "/\\.otf$/",
+          "/\\.tiff?$/",
+          "/\\.ttf$/",
+          "/\\.eot$/",
+          "/\\.midi?$/"
+        ],
+        "loader": "G:\\with-dva\\node_modules\\_file-loader@1.1.11@file-loader\\dist\\cjs.js",
+        "options": {
+          "name": "[name]-[hash:5].[ext]"
+        }
+      }
+    ]
+  },
+  "plugins": [
+    {
+      "<IsomorphicPlugin>": {
+        "options": {
+          "assetsFilePath": "G:\\with-dva\\.isomorphic\\assets.json",
+          "assets": [
+            ".sass",
+            ".scss",
+            ".less",
+            ".css",
+            ".bmp",
+            ".gif",
+            ".jpg",
+            ".jpeg",
+            ".png",
+            ".webp",
+            ".ico",
+            ".woff",
+            ".woff2",
+            ".svg",
+            ".svgz",
+            ".otf",
+            ".tif",
+            ".tiff",
+            ".ttf",
+            ".eot",
+            ".mid",
+            ".midi"
+          ],
+          "context": "G:\\with-dva"
+        },
+        "exts": {
+          ".sass": {
+            "ext": ".sass",
+            "exclude": "node_modules"
+          },
+          ".scss": {
+            "ext": ".scss",
+            "exclude": "node_modules"
+          },
+          ".less": {
+            "ext": ".less",
+            "exclude": "node_modules"
+          },
+          ".css": {
+            "ext": ".css",
+            "exclude": "node_modules"
+          },
+          ".bmp": {
+            "ext": ".bmp",
+            "exclude": "node_modules"
+          },
+          ".gif": {
+            "ext": ".gif",
+            "exclude": "node_modules"
+          },
+          ".jpg": {
+            "ext": ".jpg",
+            "exclude": "node_modules"
+          },
+          ".jpeg": {
+            "ext": ".jpeg",
+            "exclude": "node_modules"
+          },
+          ".png": {
+            "ext": ".png",
+            "exclude": "node_modules"
+          },
+          ".webp": {
+            "ext": ".webp",
+            "exclude": "node_modules"
+          },
+          ".ico": {
+            "ext": ".ico",
+            "exclude": "node_modules"
+          },
+          ".woff": {
+            "ext": ".woff",
+            "exclude": "node_modules"
+          },
+          ".woff2": {
+            "ext": ".woff2",
+            "exclude": "node_modules"
+          },
+          ".svg": {
+            "ext": ".svg",
+            "exclude": "node_modules"
+          },
+          ".svgz": {
+            "ext": ".svgz",
+            "exclude": "node_modules"
+          },
+          ".otf": {
+            "ext": ".otf",
+            "exclude": "node_modules"
+          },
+          ".tif": {
+            "ext": ".tif",
+            "exclude": "node_modules"
+          },
+          ".tiff": {
+            "ext": ".tiff",
+            "exclude": "node_modules"
+          },
+          ".ttf": {
+            "ext": ".ttf",
+            "exclude": "node_modules"
+          },
+          ".eot": {
+            "ext": ".eot",
+            "exclude": "node_modules"
+          },
+          ".mid": {
+            "ext": ".mid",
+            "exclude": "node_modules"
+          },
+          ".midi": {
+            "ext": ".midi",
+            "exclude": "node_modules"
+          }
+        },
+        "fs": {
+          "<MemoryFileSystem>": {
+            "data": {}
+          }
+        }
+      }
+    },
+    {
+      "<ExtractTextPlugin>": {
+        "filename": "[name].css",
+        "id": 1,
+        "options": {}
+      }
+    },
+    {
+      "<DefinePlugin>": {
+        "definitions": {
+          "process.env.NODE_ENV": "\"development\"",
+          "process.env.BABEL_ENV": "\"development\"",
+          "__CLIENT__": true,
+          "__DEV__": true,
+          "__SERVER__": false
+        }
+      }
+    },
+    {
+      "<HotModuleReplacementPlugin>": {
+        "options": {},
+        "fullBuildTimeout": 200,
+        "requestTimeout": 10000
+      }
+    }
+  ]
+}
