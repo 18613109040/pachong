@@ -1,0 +1,7 @@
+{
+  "extends": "eslint-config-egg",
+  "rules" : {
+    "no-unused-vars": 1,
+    "no-useless-constructor": "error"
+  }
+}

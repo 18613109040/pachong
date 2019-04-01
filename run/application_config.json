@@ -16,11 +16,11 @@
       "domainWhiteList": [
         "http://localhost:6001",
         "http://127.0.0.1:6001",
-        "http://192.168.199.199:6001",
+        "http://192.168.15.153:6001",
         "http://120.77.6.187:8080",
         "http://localhost:6000",
         "http://127.0.0.1:6000",
-        "http://192.168.199.199:6000",
+        "http://192.168.15.153:6000",
         "http://120.77.6.187:8080"
       ],
       "protocolWhiteList": [],
@@ -85,19 +85,28 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "G:\\with-dva\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-onerror@2.1.0@egg-onerror/lib/onerror_page.mustache"
     },
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\lib\\event-sources\\default",
-        "development": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\lib\\event-sources\\development"
+        "default": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/default",
+        "development": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
         "file": "egg-schedule.log"
+      },
+      "ctripLogger": {
+        "file": "/Users/igola/Documents/hdl/pachong/logs/reptile/ctrip.log"
+      },
+      "fliggyLogger": {
+        "file": "/Users/igola/Documents/hdl/pachong/logs/reptile/fliggy.log"
+      },
+      "feizhuLogger": {
+        "file": "/Users/igola/Documents/hdl/pachong/logs/reptile/feizhu.log"
       }
     },
     "schedule": {
@@ -114,7 +123,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\beidou-example-with-dva",
+      "tmpdir": "/var/folders/w2/h89q79_n0xb1w8cv1dlkkydw0000gp/T/egg-multipart-tmp/reptile",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -127,7 +136,10 @@
       "overrideDefault": false
     },
     "logrotator": {
-      "filesRotateByHour": null,
+      "filesRotateByHour": [
+        "/Users/igola/Documents/hdl/pachong/config/logs/reptile/egg-web.log",
+        "/Users/igola/Documents/hdl/pachong/config/logs/reptile/reptile-web.log"
+      ],
       "hourDelimiter": "-",
       "filesRotateBySize": null,
       "maxFileSize": 52428800,
@@ -137,7 +149,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "G:\\with-dva\\app\\public",
+      "dir": "/Users/igola/Documents/hdl/pachong/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -145,7 +157,7 @@
     },
     "view": {
       "root": [
-        "G:\\with-dva\\client"
+        "/Users/igola/Documents/hdl/pachong/client"
       ],
       "cache": false,
       "defaultExtension": ".jsx",
@@ -164,7 +176,7 @@
       ],
       "beautify": false,
       "cache": false,
-      "static": false,
+      "static": true,
       "doctype": "<!DOCTYPE html>",
       "assetHost": "",
       "assetPath": "/build/",
@@ -190,8 +202,8 @@
           ".tsx"
         ],
         "alias": {
-          "client": "G:\\with-dva\\client",
-          "page": "G:\\with-dva\\client\\page"
+          "client": "/Users/igola/Documents/hdl/pachong/client",
+          "page": "/Users/igola/Documents/hdl/pachong/client/page"
         }
       },
       "optimization": {
@@ -232,7 +244,7 @@
     "isomorphic": {
       "polyfill": true,
       "universal": {
-        "assetsFilePath": "G:\\with-dva\\.isomorphic\\assets.json",
+        "assetsFilePath": "/Users/igola/Documents/hdl/pachong/.isomorphic/assets.json",
         "assets": [
           ".sass",
           ".scss",
@@ -259,7 +271,7 @@
         ]
       },
       "alias": {
-        "client": "G:\\with-dva\\client"
+        "client": "/Users/igola/Documents/hdl/pachong/client"
       }
     },
     "router": {
@@ -275,48 +287,98 @@
         ".tsx"
       ]
     },
+    "validate": {},
+    "bcrypt": {
+      "saltRounds": 10
+    },
+    "jwt": {
+      "secret": "<String len: 8>",
+      "enable": true,
+      "match": "/jwt"
+    },
+    "alinode": {
+      "enable": true,
+      "server": "wss://agentserver.node.aliyun.com:8080",
+      "appid": "79021",
+      "secret": "<String len: 40>",
+      "cmddir": "/Users/igola/Documents/hdl/pachong/node_modules/_commandx@1.5.4@commandx",
+      "logdir": "/Users/igola/Documents/hdl/pachong/logs/alinode",
+      "error_log": [
+        "/Users/igola/Documents/hdl/pachong/logs/reptile/common-error.log",
+        "/Users/igola/Documents/hdl/pachong/logs/stderr.log"
+      ],
+      "packages": [
+        "/Users/igola/Documents/hdl/pachong/package.json"
+      ],
+      "reconnectDelay": 10,
+      "heartbeatInterval": 60,
+      "reportInterval": 60
+    },
     "env": "local",
-    "name": "beidou-example-with-dva",
+    "name": "reptile",
     "keys": "<String len: 6>",
     "proxy": false,
     "protocolHeaders": "x-forwarded-proto",
     "ipHeaders": "x-forwarded-for",
     "hostHeaders": "",
     "pkg": {
-      "name": "beidou-example-with-dva",
+      "name": "reptile",
       "version": "2.0.5",
-      "description": "Beidou example with dva",
+      "description": "reptile",
       "scripts": {
-        "start": "beidou start",
+        "start": "ENABLE_NODE_LOG=YES beidou start --daemon --ignore-stderr --title=egg-server-reptile",
         "debug": "beidou debug",
-        "stop": "beidou stop",
+        "stop": "beidou stop --title=egg-server-reptile",
         "dev": "beidou dev",
+        "prod": "beidou start --env=prod --workers=1",
         "build": "beidou build",
-        "build:node": "beidou build --target=node"
+        "build:node": "beidou build --target=node",
+        "test": "beidou test"
       },
       "license": "MIT",
       "dependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "antd": "^3.15.1",
+        "babel-plugin-dynamic-import-node": "^2.2.0",
+        "babel-plugin-import": "^1.11.0",
         "babel-polyfill": "^6.26.0",
+        "babel-preset-beidou-client": "^2.0.1",
         "beidou": "^2.0.5",
         "beidou-cli": "^2.0.1",
         "dva": "^2.4.1",
-        "react": "^16.8.5",
-        "antd": "^3.15.1",
-        "react-dom": "^16.8.5",
-        "store": "^2.0.12",
+        "egg-alinode": "^2.0.1",
+        "egg-bcrypt": "^1.1.0",
+        "egg-http-proxy": "^0.1.0",
+        "egg-jwt": "^3.1.6",
+        "egg-logrotator": "^3.0.7",
+        "egg-mongoose": "^3.1.1",
+        "egg-validate": "^2.0.2",
+        "koa-is-json": "^1.0.0",
+        "lodash-decorators": "^6.0.1",
+        "nodeinstall": "^0.1.3",
         "prop-types": "^15.7.2",
+        "react": "^16.8.5",
+        "react-dom": "^16.8.5",
         "react-hot-loader": "^4.8.0",
-        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-        "babel-plugin-dynamic-import-node": "^2.2.0",
-        "babel-plugin-import": "^1.11.0",
         "react-loadable": "^5.3.1",
-        "babel-preset-beidou-client": "^2.0.1"
+        "store": "^2.0.12",
+        "nightmare": "^3.0.1",
+        "query-string": "^6.4.2",
+        "path-to-regexp": "^3.0.0",
+        "moment": "^2.24.0"
       },
-      "gitHead": "b601b857e2d005cdad7cb7b73462a7e02f23f8e9"
+      "devDependencies": {
+        "egg-mock": "^3.22.1",
+        "eslint": "^5.6.1",
+        "eslint-config-egg": "^7.1.0"
+      },
+      "engines": {
+        "node": ">= 8.0.0"
+      }
     },
-    "baseDir": "G:\\with-dva",
-    "HOME": "C:\\Users\\Administrator",
-    "rundir": "G:\\with-dva\\run",
+    "baseDir": "/Users/igola/Documents/hdl/pachong",
+    "HOME": "/Users/igola",
+    "rundir": "/Users/igola/Documents/hdl/pachong/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -347,7 +409,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "G:\\with-dva\\logs\\beidou-example-with-dva",
+      "dir": "/Users/igola/Documents/hdl/pachong/logs/reptile",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -355,7 +417,7 @@
       "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
-      "appLogName": "beidou-example-with-dva-web.log",
+      "appLogName": "reptile-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
@@ -415,16 +477,22 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
-    "client": "G:\\with-dva\\client",
+    "client": "/Users/igola/Documents/hdl/pachong/client",
     "core": {
       "name": "Beidou"
     },
     "doman": {
-      "xiecheng": "https://m.ctrip.com"
+      "ctrip": "https://m.ctrip.com",
+      "fliggy": "https://sijipiao.fliggy.com"
     },
+    "middleware": [
+      "jwt",
+      "errorHandler",
+      "gzip"
+    ],
     "coreMiddlewares": "~config~coreMiddleware",
-    "appMiddlewares": [],
-    "appMiddleware": "~config~appMiddlewares",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware",
     "multipartParseOptions": {
       "autoFields": false,
       "defCharset": "utf8",
@@ -446,8 +514,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-session@3.1.0@egg-session",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-session@3.1.0@egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -459,8 +527,8 @@
         "session"
       ],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-security@2.5.0@egg-security",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security",
       "version": "2.5.0"
     },
     "jsonp": {
@@ -472,8 +540,8 @@
         "security"
       ],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-jsonp@2.0.0@egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -485,8 +553,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-onerror@2.1.0@egg-onerror",
       "version": "2.1.0"
     },
     "watcher": {
@@ -496,8 +564,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-watcher@3.1.0@egg-watcher",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-watcher@3.1.0@egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -507,8 +575,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-schedule@3.6.1@egg-schedule",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-schedule@3.6.1@egg-schedule",
       "version": "3.6.1"
     },
     "multipart": {
@@ -520,8 +588,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-multipart@2.4.0@egg-multipart",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart",
       "version": "2.4.0"
     },
     "development": {
@@ -535,21 +603,21 @@
       "env": [
         "local"
       ],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-development@2.4.2@egg-development",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-development@2.4.2@egg-development",
       "version": "2.4.2"
     },
     "logrotator": {
       "enable": true,
-      "package": "egg-logrotator",
       "name": "logrotator",
       "dependencies": [
         "schedule"
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator",
+      "from": "/Users/igola/Documents/hdl/pachong/config/plugin.js",
+      "package": "egg-logrotator",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-logrotator@3.0.7@egg-logrotator",
       "version": "3.0.7"
     },
     "static": {
@@ -559,8 +627,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-static@2.2.0@egg-static",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-static@2.2.0@egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -570,8 +638,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_egg@2.20.1@egg\\config\\plugin.js",
-      "path": "G:\\with-dva\\node_modules\\_egg-view@2.1.2@egg-view",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-view@2.1.2@egg-view",
       "version": "2.1.2"
     },
     "beidouView": {
@@ -581,8 +649,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
-      "path": "G:\\with-dva\\node_modules\\_beidou-view@2.0.1@beidou-view",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/plugin.default.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view@2.0.1@beidou-view",
       "version": "2.0.1"
     },
     "react": {
@@ -594,8 +662,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
-      "path": "G:\\with-dva\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/plugin.default.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react",
       "version": "2.0.1"
     },
     "webpack": {
@@ -608,8 +676,8 @@
       "name": "webpack",
       "dependencies": [],
       "optionalDependencies": [],
-      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
-      "path": "G:\\with-dva\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/plugin.default.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack",
       "version": "2.0.5"
     },
     "isomorphic": {
@@ -619,8 +687,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
-      "path": "G:\\with-dva\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/plugin.default.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic",
       "version": "2.0.1"
     },
     "router": {
@@ -630,8 +698,54 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\with-dva\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\plugin.default.js",
-      "path": "G:\\with-dva\\node_modules\\_beidou-router@2.0.1@beidou-router",
+      "from": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/plugin.default.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router",
+      "version": "2.0.1"
+    },
+    "validate": {
+      "enable": true,
+      "package": "egg-validate",
+      "name": "validate",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/igola/Documents/hdl/pachong/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-validate@2.0.2@egg-validate",
+      "version": "2.0.2"
+    },
+    "bcrypt": {
+      "enable": true,
+      "package": "egg-bcrypt",
+      "name": "bcrypt",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/igola/Documents/hdl/pachong/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-bcrypt@1.1.0@egg-bcrypt",
+      "version": "1.1.0"
+    },
+    "jwt": {
+      "enable": true,
+      "package": "egg-jwt",
+      "name": "jwt",
+      "dependencies": [],
+      "optionalDependencies": [
+        "onerror"
+      ],
+      "env": [],
+      "from": "/Users/igola/Documents/hdl/pachong/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-jwt@3.1.6@egg-jwt",
+      "version": "3.1.6"
+    },
+    "alinode": {
+      "enable": true,
+      "package": "egg-alinode",
+      "name": "alinode",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/igola/Documents/hdl/pachong/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-alinode@2.0.1@egg-alinode",
       "version": "2.0.1"
     }
   }

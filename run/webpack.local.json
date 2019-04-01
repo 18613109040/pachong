@@ -1,7 +1,7 @@
 {
   "mode": "development",
   "output": {
-    "path": "G:\\with-dva\\build",
+    "path": "/Users/igola/Documents/hdl/pachong/build",
     "filename": "[name].js?[hash]",
     "chunkFilename": "[name].js",
     "publicPath": "/build/"
@@ -15,8 +15,8 @@
       ".tsx"
     ],
     "alias": {
-      "client": "G:\\with-dva\\client",
-      "page": "G:\\with-dva\\client\\page"
+      "client": "/Users/igola/Documents/hdl/pachong/client",
+      "page": "/Users/igola/Documents/hdl/pachong/client/page"
     }
   },
   "optimization": {
@@ -61,17 +61,17 @@
   },
   "bail": false,
   "devtool": "eval-source-map",
-  "context": "G:\\with-dva",
+  "context": "/Users/igola/Documents/hdl/pachong",
   "entry": {
     "router": [
-      "G:\\with-dva\\node_modules\\_webpack-dev-server@3.2.1@webpack-dev-server\\client\\index.js?http://0.0.0.0:6002",
-      "G:\\with-dva\\node_modules\\_webpack@4.29.6@webpack\\hot\\only-dev-server.js",
-      "G:\\with-dva\\client\\router.jsx"
+      "/Users/igola/Documents/hdl/pachong/node_modules/_webpack-dev-server@3.2.1@webpack-dev-server/client/index.js?http://0.0.0.0:6002",
+      "/Users/igola/Documents/hdl/pachong/node_modules/_webpack@4.29.6@webpack/hot/only-dev-server.js",
+      "/Users/igola/Documents/hdl/pachong/client/router.jsx"
     ],
     "index": [
-      "G:\\with-dva\\node_modules\\_webpack-dev-server@3.2.1@webpack-dev-server\\client\\index.js?http://0.0.0.0:6002",
-      "G:\\with-dva\\node_modules\\_webpack@4.29.6@webpack\\hot\\only-dev-server.js",
-      "G:\\with-dva\\client\\index.jsx"
+      "/Users/igola/Documents/hdl/pachong/node_modules/_webpack-dev-server@3.2.1@webpack-dev-server/client/index.js?http://0.0.0.0:6002",
+      "/Users/igola/Documents/hdl/pachong/node_modules/_webpack@4.29.6@webpack/hot/only-dev-server.js",
+      "/Users/igola/Documents/hdl/pachong/client/index.jsx"
     ]
   },
   "module": {
@@ -81,12 +81,12 @@
         "test": "/\\.(js|jsx|ts|tsx|mjs)$/",
         "exclude": "/node_modules/",
         "use": {
-          "loader": "G:\\with-dva\\node_modules\\_babel-loader@8.0.5@babel-loader\\lib\\index.js",
+          "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_babel-loader@8.0.5@babel-loader/lib/index.js",
           "options": {
             "babelrc": true,
             "presets": [
               [
-                "G:\\with-dva\\node_modules\\_babel-preset-beidou-client@2.0.1@babel-preset-beidou-client\\index.js",
+                "/Users/igola/Documents/hdl/pachong/node_modules/_babel-preset-beidou-client@2.0.1@babel-preset-beidou-client/index.js",
                 {}
               ]
             ],
@@ -101,20 +101,20 @@
         "exclude": "/\\.m(odule)?\\.css$/",
         "loader": [
           {
-            "loader": "G:\\with-dva\\node_modules\\_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin/dist/loader.js",
             "options": {
               "omit": 1,
               "remove": true
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_style-loader@0.19.1@style-loader\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_style-loader@0.19.1@style-loader/index.js",
             "options": {
               "hmr": true
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_css-loader@0.28.11@css-loader\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_css-loader@0.28.11@css-loader/index.js",
             "options": {
               "importLoaders": 1,
               "minimize": false,
@@ -123,7 +123,7 @@
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_postcss-loader@2.1.6@postcss-loader\\lib\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
             "options": {
               "ident": "postcss"
             }
@@ -134,20 +134,20 @@
         "test": "/\\.m(odule)?\\.css$/",
         "loader": [
           {
-            "loader": "G:\\with-dva\\node_modules\\_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin/dist/loader.js",
             "options": {
               "omit": 1,
               "remove": true
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_style-loader@0.19.1@style-loader\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_style-loader@0.19.1@style-loader/index.js",
             "options": {
               "hmr": true
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_css-loader@0.28.11@css-loader\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_css-loader@0.28.11@css-loader/index.js",
             "options": {
               "importLoaders": 1,
               "minimize": false,
@@ -157,7 +157,7 @@
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_postcss-loader@2.1.6@postcss-loader\\lib\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
             "options": {
               "ident": "postcss"
             }
@@ -169,20 +169,20 @@
         "exclude": "/\\.m(odule)?\\.less$/",
         "use": [
           {
-            "loader": "G:\\with-dva\\node_modules\\_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin/dist/loader.js",
             "options": {
               "omit": 1,
               "remove": true
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_style-loader@0.19.1@style-loader\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_style-loader@0.19.1@style-loader/index.js",
             "options": {
               "hmr": true
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_css-loader@0.28.11@css-loader\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_css-loader@0.28.11@css-loader/index.js",
             "options": {
               "importLoaders": 1,
               "minimize": false,
@@ -191,13 +191,13 @@
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_postcss-loader@2.1.6@postcss-loader\\lib\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
             "options": {
               "ident": "postcss"
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_less-loader@4.1.0@less-loader\\dist\\cjs.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js",
             "options": {
               "javascriptEnabled": true
             }
@@ -208,20 +208,20 @@
         "test": "/\\.m(odule)?\\.less$/",
         "use": [
           {
-            "loader": "G:\\with-dva\\node_modules\\_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin/dist/loader.js",
             "options": {
               "omit": 1,
               "remove": true
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_style-loader@0.19.1@style-loader\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_style-loader@0.19.1@style-loader/index.js",
             "options": {
               "hmr": true
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_css-loader@0.28.11@css-loader\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_css-loader@0.28.11@css-loader/index.js",
             "options": {
               "importLoaders": 1,
               "minimize": false,
@@ -231,13 +231,13 @@
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_postcss-loader@2.1.6@postcss-loader\\lib\\index.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
             "options": {
               "ident": "postcss"
             }
           },
           {
-            "loader": "G:\\with-dva\\node_modules\\_less-loader@4.1.0@less-loader\\dist\\cjs.js",
+            "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js",
             "options": {
               "javascriptEnabled": true
             }
@@ -252,7 +252,7 @@
           "/\\.png$/",
           "/\\.webp$/"
         ],
-        "loader": "G:\\with-dva\\node_modules\\_url-loader@0.6.2@url-loader\\index.js",
+        "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_url-loader@0.6.2@url-loader/index.js",
         "options": {
           "limit": 10000,
           "name": "[name]-[hash:5].[ext]"
@@ -269,7 +269,7 @@
           "/\\.eot$/",
           "/\\.midi?$/"
         ],
-        "loader": "G:\\with-dva\\node_modules\\_file-loader@1.1.11@file-loader\\dist\\cjs.js",
+        "loader": "/Users/igola/Documents/hdl/pachong/node_modules/_file-loader@1.1.11@file-loader/dist/cjs.js",
         "options": {
           "name": "[name]-[hash:5].[ext]"
         }
@@ -280,7 +280,7 @@
     {
       "<IsomorphicPlugin>": {
         "options": {
-          "assetsFilePath": "G:\\with-dva\\.isomorphic\\assets.json",
+          "assetsFilePath": "/Users/igola/Documents/hdl/pachong/.isomorphic/assets.json",
           "assets": [
             ".sass",
             ".scss",
@@ -305,7 +305,7 @@
             ".mid",
             ".midi"
           ],
-          "context": "G:\\with-dva"
+          "context": "/Users/igola/Documents/hdl/pachong"
         },
         "exts": {
           ".sass": {

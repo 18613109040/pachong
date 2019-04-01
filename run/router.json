@@ -5,8 +5,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/xiecheng/flightListSearch",
-    "regexp": "/^\\/api\\/xiecheng\\/flightListSearch(?:\\/(?=$))?$/",
+    "path": "/api/fliggy/search",
+    "regexp": "/^\\/api\\/fliggy\\/search(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

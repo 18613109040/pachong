@@ -8,19 +8,7 @@ import createHistory from 'history/createHashHistory';
 import './index.less'
 function createApp(opts) {
   const app = dva(opts);
-  // app.model({
-  //   namespace: 'count',
-  //   state: 0,
-  //   reducers: {
-  //     add(count) {
-  //       return count + 1;
-  //     },
-  //     minus(count) {
-  //       return count - 1;
-  //     },
-  //   },
-  // });
-
+  app.model(require('./models/global').default);
   app.router(Routers)
   return app;
 }
@@ -42,13 +30,13 @@ export default class Index extends React.Component {
       <html>
         <head>
           <title>Beidou example with dva</title>
-          <link rel="stylesheet" href={helper.asset('index.css')} />
-          <link rel="stylesheet" href={helper.asset('manifest.css')} />
+          <link rel="stylesheet" href={helper.asset('./index.css')} />
+          <link rel="stylesheet" href={helper.asset('./manifest.css')} />
         </head>
         <body>
           <div id="container" dangerouslySetInnerHTML={{ __html: html }} />
-          <script src={helper.asset('manifest.js')} />
-          <script src={helper.asset('index.js')} />
+          <script src={helper.asset('./manifest.js')} />
+          <script src={helper.asset('./index.js')} />
         </body>
       </html>
     );

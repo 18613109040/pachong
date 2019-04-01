@@ -1,13 +1,6 @@
 'use strict';
-
-
-
-module.exports = (app) => {
+module.exports = app => {
   const { router, controller } = app;
-
-  router.post('/api/xiecheng/flightListSearch', controller.xiecheng.search);
-  router.get('/', '/*',controller.index.index);
-
-  
-
+  require('./router/fliggy')(app);
+  router.get('/', '/*', controller.index.index);
 };

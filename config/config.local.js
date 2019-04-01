@@ -13,4 +13,13 @@ const domainWhiteList = [];
 });
 module.exports = {
   security: { domainWhiteList },
+  // mongoose: {
+  //   url: 'mongodb://localhost:27017/igola-links',
+  //   options: {
+  //     useMongoClient: true,
+  //     autoReconnect: true,
+  //     reconnectTries: Number.MAX_VALUE,
+  //     bufferMaxEntries: 0,
+  //   },
+  // }
 };
