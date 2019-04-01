@@ -42,7 +42,9 @@
     "nightmare":"^3.0.1",
     "query-string":"^6.4.2",
     "path-to-regexp":"^3.0.0",
-    "moment":"^2.24.0"
+    "moment":"^2.24.0",
+    "babel-plugin-transform-decorators-legacy":"^1.3.5",
+    "babel-plugin-import-inspector":"^2.0.0"
   },
   "devDependencies": {
     "egg-mock": "^3.22.1",

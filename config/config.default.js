@@ -12,12 +12,24 @@ module.exports = appInfo => {
     },
     webpack: {
       resolve: {
-        extensions: ['.json', '.js', '.jsx', '.ts', '.tsx'],
+        extensions: [ '.json', '.js', '.jsx', '.ts', '.tsx' ],
         alias: {
           client: path.join(__dirname, '../client'),
           page: path.join(__dirname, '../client/page'),
         },
-      }
+      },
+    },
+    isomorphic: {
+      babel: {
+        plugins: [
+          require.resolve('babel-plugin-dynamic-import-node'),
+          require.resolve('babel-plugin-transform-decorators-legacy'),
+          [ require.resolve('babel-plugin-import-inspector'), {
+            serverSideRequirePath: true,
+          }],
+        ],
+        extensions: [ '.js', '.jsx', '.mjs' ],
+      },
     },
     // 关闭scrf安全策略
     security: {
@@ -33,7 +45,7 @@ module.exports = appInfo => {
       match: '/jwt', // optional
     },
     // 自定义中间件
-    middleware: ['errorHandler', 'gzip'],
+    middleware: [ 'errorHandler', 'gzip' ],
     // 自定义日志
     customLogger: {
       ctripLogger: {
@@ -54,7 +66,7 @@ module.exports = appInfo => {
       secret: 'a9b6ef1bd9b2038aad949b0cb0a7273712895727'
     },
     // 默认日志存放目录 `${appInfo.root}/logs/${appInfo.name}`
-    logger : {
+    logger: {
       dir: path.join(__dirname, '../logs', appInfo.name),
     },
     // 日志切割
@@ -69,6 +81,6 @@ module.exports = appInfo => {
       maxFiles: 10, // pieces rotate by size
       rotateDuration: 60000, // time interval to judge if any file need rotate
       maxDays: 31, // keep max days log files, default is `31`. Set `0` to keep all logs
-    }
+    },
   };
 };

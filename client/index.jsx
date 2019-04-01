@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+// import 'babel-polyfill';
 import React from 'react';
 import dva, { connect } from 'dva';
 import { memoryHistory, browserHistory } from 'dva/router';
@@ -52,6 +52,7 @@ if (__CLIENT__) {
   if (module.hot) {
     module.hot.accept()
   }
+  
   // 5. Start
   app.start('#container');
 }

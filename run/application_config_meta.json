@@ -67,6 +67,20 @@
       "hot": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
     }
   },
+  "isomorphic": {
+    "babel": {
+      "plugins": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+      "extensions": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+    },
+    "polyfill": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js",
+    "universal": {
+      "assetsFilePath": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js",
+      "assets": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js"
+    },
+    "alias": {
+      "client": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js"
+    }
+  },
   "security": {
     "csrf": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
     "domainWhiteList": "/Users/igola/Documents/hdl/pachong/config/config.local.js",
@@ -241,16 +255,6 @@
     "defaultViewEngine": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
     "mapping": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-view@2.1.2@egg-view/config/config.default.js"
   },
-  "isomorphic": {
-    "polyfill": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js",
-    "universal": {
-      "assetsFilePath": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js",
-      "assets": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js"
-    },
-    "alias": {
-      "client": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js"
-    }
-  },
   "router": {
     "root": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router/config/config.default.js",
     "urlPrefix": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router/config/config.default.js",
@@ -310,7 +314,9 @@
       "nightmare": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
       "query-string": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
       "path-to-regexp": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "moment": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "moment": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+      "babel-plugin-transform-decorators-legacy": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+      "babel-plugin-import-inspector": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
     },
     "devDependencies": {
       "egg-mock": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",

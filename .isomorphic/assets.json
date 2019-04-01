@@ -4,35 +4,8 @@
     "links": "links_2Iby3",
     "copyright": "copyright_3gcGQ"
   },
-  "client/components/GlobalHeader/index.module.less": {
-    "header": "header_3ZUle",
-    "logo": "logo_JcpVa",
-    "menu": "menu_1vRF3",
-    "trigger": "trigger_3O__8",
-    "right": "right_Dhyk1",
-    "action": "action_1_rKD",
-    "search": "search_3wtD2",
-    "account": "account_1on1o",
-    "avatar": "avatar_3Uix5",
-    "dark": "dark_14LtL"
-  },
-  "client/components/HeaderSearch/index.module.less": {
-    "headerSearch": "headerSearch_3Fs5i",
-    "input": "input_1NlA0",
-    "show": "show_2iMIw"
-  },
-  "client/components/SliderMenu/index.module.less": {
-    "logo": "logo_24_4h",
-    "sider": "sider_mw-O0",
-    "fixSiderbar": "fixSiderbar_284b1",
-    "light": "light_1nZEZ",
-    "icon": "icon_qPuwC"
-  },
   "client/index.less": {},
   "client/layouts/BasicLayout.module.less": {
     "content": "content_2Qrkn"
-  },
-  "client/layouts/header.module.less": {
-    "fixedHeader": "fixedHeader_2UF1K"
   }
 }

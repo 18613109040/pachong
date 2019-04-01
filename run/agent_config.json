@@ -264,6 +264,23 @@
       },
       "alias": {
         "client": "/Users/igola/Documents/hdl/pachong/client"
+      },
+      "babel": {
+        "plugins": [
+          "/Users/igola/Documents/hdl/pachong/node_modules/_babel-plugin-dynamic-import-node@2.2.0@babel-plugin-dynamic-import-node/lib/index.js",
+          "/Users/igola/Documents/hdl/pachong/node_modules/_babel-plugin-transform-decorators-legacy@1.3.5@babel-plugin-transform-decorators-legacy/lib/index.js",
+          [
+            "/Users/igola/Documents/hdl/pachong/node_modules/_babel-plugin-import-inspector@2.0.0@babel-plugin-import-inspector/index.js",
+            {
+              "serverSideRequirePath": true
+            }
+          ]
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".mjs"
+        ]
       }
     },
     "router": {
@@ -359,7 +376,9 @@
         "nightmare": "^3.0.1",
         "query-string": "^6.4.2",
         "path-to-regexp": "^3.0.0",
-        "moment": "^2.24.0"
+        "moment": "^2.24.0",
+        "babel-plugin-transform-decorators-legacy": "^1.3.5",
+        "babel-plugin-import-inspector": "^2.0.0"
       },
       "devDependencies": {
         "egg-mock": "^3.22.1",
