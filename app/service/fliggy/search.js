@@ -7,13 +7,16 @@ class SearchService extends Service {
   constructor(ctx) {
     super(ctx);
     const { fliggy } = this.config.doman;
+    this.model = this.ctx.model.Cookies;
     this.host = fliggy;
+
   }
   // 飞猪查询机票接口
   async index(payload) {
     // const { ctx } = this;
     const data = [];
     // 生成guid
+    let cookies = await this.model.find({status:'NOOVERDUE'}).sort( { createdAt: -1 }).lean().exec();
     const guid = parseInt(Math.random() * 10000);
     const parmas = this.formatBody({
       ...payload,
@@ -30,7 +33,8 @@ class SearchService extends Service {
       const resd = await this.getFlightSearch(rtParams, guid);
       data.push(resd);
     }
-    format(data)
+    console.dir(res)
+    // format(data)
     return data;
 
   }
