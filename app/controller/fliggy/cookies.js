@@ -58,6 +58,10 @@ class CookiesController extends Controller {
     // 校验参数
     const { id } = ctx.params;
     // 调用 Service 进行业务处理
+    const { cookies } = service.fliggy;
+    const res = await cookies.destroy(id);
+    const msg = '删除cookies成功';
+    ctx.helper.success({ ctx, res, msg });
   }
 
   // 获取单个角色
@@ -65,6 +69,7 @@ class CookiesController extends Controller {
     const { ctx, service } = this;
     // 组装参数
     const { id } = ctx.params;
+
     // 调用 Service 进行业务处理
   }
 }
