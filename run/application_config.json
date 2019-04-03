@@ -308,6 +308,29 @@
     "bcrypt": {
       "saltRounds": 10
     },
+    "mongoose": {
+      "url": "mongodb://localhost:27017/igola",
+      "options": {
+        "useMongoClient": true,
+        "autoReconnect": true,
+        "reconnectTries": 1.7976931348623157e+308,
+        "bufferMaxEntries": 0,
+        "useNewUrlParser": true
+      },
+      "loadModel": true,
+      "app": true,
+      "agent": false,
+      "client": {
+        "url": "mongodb://localhost:27017/igola",
+        "options": {
+          "useMongoClient": true,
+          "autoReconnect": true,
+          "reconnectTries": 1.7976931348623157e+308,
+          "bufferMaxEntries": 0,
+          "useNewUrlParser": true
+        }
+      }
+    },
     "jwt": {
       "secret": "<String len: 8>",
       "enable": true,
@@ -742,6 +765,17 @@
       "from": "/Users/igola/Documents/hdl/pachong/config/plugin.js",
       "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-bcrypt@1.1.0@egg-bcrypt",
       "version": "1.1.0"
+    },
+    "mongoose": {
+      "enable": true,
+      "package": "egg-mongoose",
+      "name": "mongoose",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/igola/Documents/hdl/pachong/config/plugin.js",
+      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-mongoose@3.1.1@egg-mongoose",
+      "version": "3.1.1"
     },
     "jwt": {
       "enable": true,

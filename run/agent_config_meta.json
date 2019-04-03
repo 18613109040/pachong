@@ -81,6 +81,18 @@
       "client": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js"
     }
   },
+  "mongoose": {
+    "url": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+    "options": {
+      "useMongoClient": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+      "autoReconnect": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+      "reconnectTries": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+      "bufferMaxEntries": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+    },
+    "loadModel": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-mongoose@3.1.1@egg-mongoose/config/config.default.js",
+    "app": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-mongoose@3.1.1@egg-mongoose/config/config.default.js",
+    "agent": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-mongoose@3.1.1@egg-mongoose/config/config.default.js"
+  },
   "security": {
     "csrf": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
     "domainWhiteList": "/Users/igola/Documents/hdl/pachong/config/config.local.js",

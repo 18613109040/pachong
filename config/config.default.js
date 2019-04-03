@@ -31,6 +31,15 @@ module.exports = appInfo => {
         extensions: [ '.js', '.jsx', '.mjs' ],
       },
     },
+    mongoose: {
+      url: 'mongodb://localhost:27017/igola',
+      options: {
+        useMongoClient: true,
+        autoReconnect: true,
+        reconnectTries: Number.MAX_VALUE,
+        bufferMaxEntries: 0,
+      },
+    },
     // 关闭scrf安全策略
     security: {
       csrf: false,
