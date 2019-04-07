@@ -19,10 +19,14 @@ exports.jwt = {
 //   enable: true,
 //   package: 'egg-http-proxy',
 // };
-exports.alinode = {
+exports.redis = {
   enable: true,
-  package: 'egg-alinode',
+  package: 'egg-redis',
 };
+// exports.alinode = {
+//   enable: true,
+//   package: 'egg-alinode',
+// };
 exports.logrotator = {
   enable: true,
   package: 'egg-logrotator',

@@ -11,7 +11,14 @@ class SearchController extends Controller {
     const { body } = ctx.request;
     // 调用 Service 进行业务处理
     const { search } = service.fliggy;
-    const res = await search.index(body);
+    let res = {}
+    //飞猪国际机票
+    if(body.international){
+      res = await search.international(body);
+    }else{
+      //飞猪国内机票
+      res = await search.domestic(body);
+    }
     // 设置响应内容和响应状态码
     ctx.helper.success({ ctx, res });
   }

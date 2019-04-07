@@ -5,6 +5,7 @@
  * @acount 账号
  * @status 状态 OVERDUE 过期 NOOVERDUE 未过期
  * @cookie cookie值
+ * @count 使用次数
  **/
 module.exports = app => {
   const mongoose = app.mongoose;
@@ -22,6 +23,10 @@ module.exports = app => {
     cookie: {
       type: String,
       required: true,
+    },
+    count: {
+      type: Number,
+      default: 0
     },
     createdAt: {
       type: Date,

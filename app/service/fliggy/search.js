@@ -6,23 +6,23 @@ const queryString = require('query-string');
 class SearchService extends Service {
   constructor(ctx) {
     super(ctx);
-    const { fliggy } = this.config.doman;
+    const { fliggy, fliggyDomestic } = this.config.doman;
     this.model = this.ctx.model.Cookies;
     this.host = fliggy;
-
+    this.domesticHost = fliggyDomestic;
+    this.cookies = [];
+    this.guid = ''
   }
-  // 飞猪查询机票接口
-  async index(payload) {
-    // const { ctx } = this;
+  // 国际机票搜索
+  async international(payload){
+    const { app, ctx } = this;
+    const cookies = await app.redis.hvals('fliggy:cookies');
+    this.cookies =  cookies.filter(item=> JSON.parse(item).status === 'NOOVERDUE')
     const data = [];
     // 生成guid
-    let cookies = await this.model.find({status:'NOOVERDUE'}).sort( { createdAt: -1 }).lean().exec();
-    const guid = parseInt(Math.random() * 10000);
-    const parmas = this.formatBody({
-      ...payload,
-      guid,
-    });
-    const res = await this.getFlightSearch(parmas, guid);
+    this.guid = parseInt(Math.random() * 10000);
+    const parmas = this.formatInternationalBody(payload);
+    const res = await this.getFlightSearch(parmas);
     data.push(res);
     if (parmas.tripType === 1) {
       const rtParams = {
@@ -30,17 +30,67 @@ class SearchService extends Service {
         iesToken: res.iesToken,
         queryRecordId: res.queryRecordId,
       };
-      const resd = await this.getFlightSearch(rtParams, guid);
+      const resd = await this.getFlightSearch(rtParams);
       data.push(resd);
     }
-    console.dir(res)
+    // format(data)
+    return data;
+  }
+  //国内机票
+  async domestic(payload){
+    const { app, ctx } = this;
+    const cookies = await app.redis.hvals('fliggy:cookies');
+    this.cookies =  cookies.filter(item=> JSON.parse(item).status === 'NOOVERDUE')
+    const data = [];
+    // 生成guid
+    this.guid = parseInt(Math.random() * 10000);
+    const parmas = this.formatDomesticBody(payload);
+    console.dir(parmas)
+    const res = await this.getDomesticFlight(parmas);
+    data.push(res);
+    // if (parmas.tripType === 1) {
+    //   const rtParams = {
+    //     ...parmas,
+    //     iesToken: res.iesToken,
+    //     queryRecordId: res.queryRecordId,
+    //   };
+    //   const resd = await this.getFlightSearch(rtParams);
+    //   data.push(resd);
+    // }
+    // format(data)
+    return data;
+  }
+  // 飞猪查询机票接口
+  async index(payload) {
+    const { app, ctx } = this;
+    const cookies = await app.redis.hvals('fliggy:cookies');
+    this.cookies =  cookies.filter(item=> JSON.parse(item).status === 'NOOVERDUE')
+    const data = [];
+    // 生成guid
+    this.guid = parseInt(Math.random() * 10000);
+    const parmas = this.formatInternationalBody(payload);
+    const res = await this.getFlightSearch(parmas);
+    data.push(res);
+    if (parmas.tripType === 1) {
+      const rtParams = {
+        ...parmas,
+        iesToken: res.iesToken,
+        queryRecordId: res.queryRecordId,
+      };
+      const resd = await this.getFlightSearch(rtParams);
+      data.push(resd);
+    }
     // format(data)
     return data;
 
   }
   // curl 抓取飞猪机票数据
-  async getFlightSearch(parmas, guid) {
-    const { ctx } = this;
+  async getFlightSearch(parmas) {
+    const { ctx, app, service } = this;
+    const { cookies } = service.fliggy;
+    if(this.cookies.length===0) ctx.throw(404, '没有有效的cookies');
+    let currentCookie = this.cookies.pop()
+    currentCookie = JSON.parse(currentCookie)
     const result = await ctx.curl(`${this.host}/ie/flight_search_result_poller.do`, {
       method: 'GET',
       dataAsQueryString: true,
@@ -49,26 +99,106 @@ class SearchService extends Service {
       gzip: true,
       data: parmas,
       headers: {
-        cookie: 'orderBy=undefined; cna=yTgiFS4kgS0CAT2Mfcjyu3O7; t=df81cc876a1dea26bbd1900d1cb9ef94; _tb_token_=7d53eed1ef658; cookie2=1c6f8f2cc12dd4d49b901dc6295efde6; hng=""; tracknick=hu4411964; ck1=""; lgc=hu4411964; enc=8%2BZMZUlR5kmdkwDhSJ87YhHjT%2Bn6Yo%2Fxu7jtey7DzEvvX548hENDlcwLX9ZHh%2FUXJq%2F%2BOrXpdvIEWUFmH5OCZw%3D%3D; uc3=vt3=F8dByEnYj%2Fb5SwUpcvM%3D&id2=UoYY4%2FqHPH9QOg%3D%3D&nk2=CzgZVLwDQ8jq&lg2=Vq8l%2BKCLz3%2F65A%3D%3D; csg=c2525ca6; skt=6dc2190eec0ece6c; dnk=hu4411964; uc1=cookie16=VFC%2FuZ9az08KUQ56dCrZDlbNdA%3D%3D&cookie21=UtASsssmeW6lpyd%2BB%2B3t&cookie15=VT5L2FSpMGV7TQ%3D%3D&existShop=false&pas=0&cookie14=UoTZ50E5KgrwHg%3D%3D&tag=8&lng=zh_CN; lid=hu4411964; l=bBjI9IGVv4OGRjhWKOCw5uIJcR7OSIRAguPRwFRDi_5d46LsQYQOliZgWFp6Vj5R__8B4gAYXXy9-etXm; isg=BLu7TABhY2NzoV_qDFmCPtzvSpnluNuTE0PUK614lrrRDNvuNeKhYm9KJuznLCcK',
+        cookie: currentCookie.cookie
       },
     });
-    ctx.getLogger('fliggyLogger').info(`poxy ==> ${this.host}/ie/flight_search_result_poller.do?${queryString.stringify(parmas)}`);
-    result.data = result.data.replace(`jsonp${guid + 1}(`, '');
-    result.data = result.data.substring(0, result.data.length - 1);
-    const searchResult = JSON.parse(result.data);
-    // @isContinue 是否还有数据
-    if (searchResult.isContinue) {
-      return this.getFlightSearch(parmas, guid);
+    // redis 调用次数加一
+    await app.redis.hset('fliggy:cookies', currentCookie._id, JSON.stringify({...currentCookie,count:currentCookie.count+1}));
+    await cookies.update(currentCookie._id, {...currentCookie,count:currentCookie.count+1});
+    if(result.status==200){
+      ctx.getLogger('fliggyLogger').info(`poxy ==> ${this.host}/ie/flight_search_result_poller.do?${queryString.stringify(parmas)}`);
+      result.data = result.data.replace(`jsonp${this.guid + 1}(`, '');
+      result.data = result.data.substring(0, result.data.length - 1);
+      const searchResult = JSON.parse(result.data);
+      this.cookies = [currentCookie,...this.cookies]
+      // @isContinue 是否还有数据
+      if (searchResult.isContinue) {
+        return this.getFlightSearch(parmas);
+      }
+      return searchResult;
+    } else {
+      // 当前cookies失效 redis更改状态
+      await app.redis.hset('fliggy:cookies', currentCookie._id, JSON.stringify({...currentCookie,status:'OVERDUE'}));
+      // 更新数据库状态
+      await cookies.update(currentCookie._id, {...currentCookie,status:'OVERDUE'});
+      return this.getFlightSearch(parmas);
     }
-    return searchResult;
+
+    
+  }
+  async getDomesticFlight(parmas){
+    const { ctx, app, service } = this;
+    const { cookies } = service.fliggy;
+    if(this.cookies.length===0) ctx.throw(404, '没有有效的cookies');
+    let currentCookie = this.cookies.pop()
+    currentCookie = JSON.parse(currentCookie)
+    const result = await ctx.curl(`${this.domesticHost}/searchow/search.htm`, {
+      method: 'GET',
+      dataAsQueryString: true,
+      dataType: 'text',
+      contentType: 'json',
+      gzip: true,
+      data: parmas,
+      headers: {
+        cookie: currentCookie.cookie
+      },
+    });
+    // redis 调用次数加一
+    await app.redis.hset('fliggy:cookies', currentCookie._id, JSON.stringify({...currentCookie,count:currentCookie.count+1}));
+    await cookies.update(currentCookie._id, {...currentCookie,count:currentCookie.count+1});
+    ctx.getLogger('fliggyLogger').info(`poxy ==> ${this.domesticHost}/searchow/search.htm?${queryString.stringify(parmas)}`);
+    const searchResult = this.formatJsonp(result.data)
+    console.dir(searchResult)
+    if(result.status===200 && searchResult.error === 0){
+      this.cookies = [currentCookie,...this.cookies]
+      return searchResult;
+    } else {
+      // 当前cookies失效 redis更改状态
+      await app.redis.hset('fliggy:cookies', currentCookie._id, JSON.stringify({...currentCookie,status:'OVERDUE'}));
+      // 更新数据库状态
+      await cookies.update(currentCookie._id, {...currentCookie,status:'OVERDUE'});
+      return this.getDomesticFlight(parmas);
+    }
   }
   /**
+   * 飞猪国内
+   * 飞猪国内目前只支持单程和往返不支持多程
+   */
+  formatDomesticBody(params){
+    const { flights, type, infantAmount, childAmount, fareClass } = params;
+    // 0 单程 1 往返 2 多程
+    const tripType = type === 'OW' ? 0 : 1;
+    const arrCity = flights[0].orgCity
+    const depCity = flights[0].dstCity
+    const depDate =  `${flights[0].date.substring(0, 4)}-${flights[0].date.substring(4, 6)}-${flights[0].date.substring(6, 8)}`
+    const fliggyQuery = {
+      _ksTS: `${new Date().getTime()}_${this.guid}`,
+      callback: `jsonp${this.guid + 1}`,
+      tripType,
+      depCity,
+      depCityName:'',
+      arrCity,
+      arrCityName:'',
+      depDate,
+      searchSource:99,
+      searchBy:1280,
+      sKey:'',
+      qid: '',
+      supportMultiTrip: true, // 是否支持多程
+      _input_charset: 'utf-8',
+      ua:'090#qCQXKvX2XuwXPXi0XXXXXQkOOoU9jUhnfDLZ3eGXAGBOzHVMhnjJAlyO3Hp9TGZAkvQXiTXvksdXPiLiXajeGXXXHYVCOFhnOuZ3Ho3kh9kTXP73O8UeGuXXHYVma+hnxXa3HoPUH4QXa67Mf8+RNUmsPvQXit2Cqnl5PKQiXX57cwr+fuVYpVDtXvXQ0ZsNLzliXXf2kC4J',
+      openCb:false
+    };
+    return fliggyQuery;
+  }
+  /**
+   * 飞猪国际
    * 格式化 请求参数 将后端机票参数转换成飞猪请求参数格式
    * @param 参数
    * @return 飞猪请求参数
    */
-  formatBody(params) {
-    const { flights, type, guid, infantAmount, childAmount, fareClass } = params;
+  formatInternationalBody(params) {
+    const { flights, type, infantAmount, childAmount, fareClass } = params;
     const searchJourney = flights.map(item => {
       const date = `${item.date.substring(0, 4)}-${item.date.substring(4, 6)}-${item.date.substring(6, 8)}`;
       return {
@@ -85,8 +215,8 @@ class SearchService extends Service {
     // 0 单程 1 往返 2 多程
     const tripType = type === 'OW' ? 0 : type === 'RT' ? 1 : 2;
     const fliggyQuery = {
-      _ksTS: `${new Date().getTime()}_${guid}`,
-      callback: `jsonp${guid + 1}`,
+      _ksTS: `${new Date().getTime()}_${this.guid}`,
+      callback: `jsonp${this.guid + 1}`,
       supportMultiTrip: true, // 是否支持多程
       searchBy: 1281,
       childPassengerNum: childAmount, // 儿童数量
@@ -103,6 +233,13 @@ class SearchService extends Service {
       needMemberPrice: true, // 是否显示会员价
     };
     return fliggyQuery;
+  }
+  /**
+   * 飞猪机票搜索返回的结果格式为 text/html 这里面需要转化成json 格式数据
+   */
+  formatJsonp(data){
+    const jsonString =  data.substring(data.indexOf("(")+1,data.lastIndexOf(")"))
+    return JSON.parse(jsonString);
   }
 }
 module.exports = SearchService;

@@ -1,416 +1,418 @@
 {
-  "keys": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+  "keys": "G:\\pachong\\config\\config.default.js",
   "react": {
-    "static": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "middlewares": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
-    "beautify": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
-    "cache": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.local.js",
-    "doctype": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
-    "assetHost": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
-    "assetPath": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
-    "placeHolder": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js"
+    "static": "G:\\pachong\\config\\config.default.js",
+    "middlewares": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "beautify": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "cache": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.local.js",
+    "doctype": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "assetHost": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "assetPath": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "placeHolder": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js"
   },
   "doman": {
-    "ctrip": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "fliggy": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+    "ctrip": "G:\\pachong\\config\\config.default.js",
+    "fliggy": "G:\\pachong\\config\\config.default.js"
   },
   "webpack": {
     "resolve": {
-      "extensions": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+      "extensions": "G:\\pachong\\config\\config.default.js",
       "alias": {
-        "client": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-        "page": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+        "client": "G:\\pachong\\config\\config.default.js",
+        "page": "G:\\pachong\\config\\config.default.js"
       }
     },
     "custom": {
-      "depth": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
+      "depth": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
     },
-    "mode": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
+    "mode": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
     "output": {
-      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "filename": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "chunkFilename": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "publicPath": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
+      "path": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "filename": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "chunkFilename": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "publicPath": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
     },
     "optimization": {
       "splitChunks": {
-        "chunks": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-        "name": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
+        "chunks": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+        "name": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
         "cacheGroups": {
-          "default": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-          "vendors": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
+          "default": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+          "vendors": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
           "manifest": {
-            "test": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
+            "test": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
           }
         }
       },
-      "noEmitOnErrors": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
+      "noEmitOnErrors": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
     },
     "devServer": {
-      "contentBase": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "port": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "noInfo": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "quiet": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "clientLogLevel": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "lazy": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
+      "contentBase": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "port": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "noInfo": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "quiet": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "clientLogLevel": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "lazy": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
       "watchOptions": {
-        "aggregateTimeout": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
+        "aggregateTimeout": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
       },
       "headers": {
-        "X-Custom-Header": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
+        "X-Custom-Header": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
       },
       "stats": {
-        "colors": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-        "chunks": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
+        "colors": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+        "chunks": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
       },
-      "publicPath": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js",
-      "hot": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-webpack@2.0.5@beidou-webpack/config/config.default.js"
+      "publicPath": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js",
+      "hot": "G:\\pachong\\node_modules\\_beidou-webpack@2.0.5@beidou-webpack\\config\\config.default.js"
     }
   },
   "isomorphic": {
     "babel": {
-      "plugins": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-      "extensions": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+      "plugins": "G:\\pachong\\config\\config.default.js",
+      "extensions": "G:\\pachong\\config\\config.default.js"
     },
-    "polyfill": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js",
+    "polyfill": "G:\\pachong\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic\\config\\config.default.js",
     "universal": {
-      "assetsFilePath": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js",
-      "assets": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js"
+      "assetsFilePath": "G:\\pachong\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic\\config\\config.default.js",
+      "assets": "G:\\pachong\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic\\config\\config.default.js"
     },
     "alias": {
-      "client": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-isomorphic@2.0.1@beidou-isomorphic/config/config.default.js"
+      "client": "G:\\pachong\\node_modules\\_beidou-isomorphic@2.0.1@beidou-isomorphic\\config\\config.default.js"
     }
   },
   "mongoose": {
-    "url": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+    "url": "G:\\pachong\\config\\config.default.js",
     "options": {
-      "useMongoClient": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-      "autoReconnect": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-      "reconnectTries": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-      "bufferMaxEntries": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+      "useMongoClient": "G:\\pachong\\config\\config.default.js",
+      "autoReconnect": "G:\\pachong\\config\\config.default.js",
+      "reconnectTries": "G:\\pachong\\config\\config.default.js",
+      "bufferMaxEntries": "G:\\pachong\\config\\config.default.js"
     },
-    "loadModel": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-mongoose@3.1.1@egg-mongoose/config/config.default.js",
-    "app": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-mongoose@3.1.1@egg-mongoose/config/config.default.js",
-    "agent": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-mongoose@3.1.1@egg-mongoose/config/config.default.js"
+    "loadModel": "G:\\pachong\\node_modules\\_egg-mongoose@3.1.1@egg-mongoose\\config\\config.default.js",
+    "app": "G:\\pachong\\node_modules\\_egg-mongoose@3.1.1@egg-mongoose\\config\\config.default.js",
+    "agent": "G:\\pachong\\node_modules\\_egg-mongoose@3.1.1@egg-mongoose\\config\\config.default.js"
+  },
+  "redis": {
+    "client": {
+      "port": "G:\\pachong\\config\\config.default.js",
+      "host": "G:\\pachong\\config\\config.default.js",
+      "password": "G:\\pachong\\config\\config.default.js",
+      "db": "G:\\pachong\\config\\config.default.js"
+    },
+    "default": "G:\\pachong\\node_modules\\_egg-redis@2.3.0@egg-redis\\config\\config.default.js",
+    "app": "G:\\pachong\\node_modules\\_egg-redis@2.3.0@egg-redis\\config\\config.default.js",
+    "agent": "G:\\pachong\\node_modules\\_egg-redis@2.3.0@egg-redis\\config\\config.default.js",
+    "supportTimeCommand": "G:\\pachong\\node_modules\\_egg-redis@2.3.0@egg-redis\\config\\config.default.js"
   },
   "security": {
-    "csrf": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "domainWhiteList": "/Users/igola/Documents/hdl/pachong/config/config.local.js",
-    "protocolWhiteList": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js",
+    "csrf": "G:\\pachong\\config\\config.default.js",
+    "domainWhiteList": "G:\\pachong\\config\\config.local.js",
+    "protocolWhiteList": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
     "xframe": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js",
-      "value": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "value": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.local.js",
-      "maxAge": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js",
-      "includeSubdomains": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.local.js",
+      "maxAge": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "includeSubdomains": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "dta": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "methodnoallow": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "noopen": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "nosniff": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "referrerPolicy": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js",
-      "value": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "value": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "xssProtection": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js",
-      "value": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "value": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "csp": {
-      "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js",
-      "policy": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "enable": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "policy": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js",
-      "checkAddress": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+      "ipBlackList": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js",
+      "checkAddress": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
     }
   },
   "bcrypt": {
-    "saltRounds": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+    "saltRounds": "G:\\pachong\\config\\config.default.js"
   },
   "jwt": {
-    "secret": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "enable": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "match": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+    "secret": "G:\\pachong\\config\\config.default.js",
+    "enable": "G:\\pachong\\config\\config.default.js",
+    "match": "G:\\pachong\\config\\config.default.js"
   },
-  "middleware": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
+  "middleware": "G:\\pachong\\config\\config.default.js",
   "customLogger": {
     "ctripLogger": {
-      "file": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+      "file": "G:\\pachong\\config\\config.default.js"
     },
     "fliggyLogger": {
-      "file": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+      "file": "G:\\pachong\\config\\config.default.js"
     },
     "feizhuLogger": {
-      "file": "/Users/igola/Documents/hdl/pachong/config/config.default.js"
+      "file": "G:\\pachong\\config\\config.default.js"
     },
     "scheduleLogger": {
-      "consoleLevel": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-schedule@3.6.1@egg-schedule/config/config.default.js",
-      "file": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-schedule@3.6.1@egg-schedule/config/config.default.js"
+      "consoleLevel": "G:\\pachong\\node_modules\\_egg-schedule@3.6.1@egg-schedule\\config\\config.default.js",
+      "file": "G:\\pachong\\node_modules\\_egg-schedule@3.6.1@egg-schedule\\config\\config.default.js"
     }
   },
-  "alinode": {
-    "server": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "enable": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "appid": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "secret": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "cmddir": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-alinode@2.0.1@egg-alinode/config/config.default.js",
-    "logdir": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-alinode@2.0.1@egg-alinode/config/config.default.js",
-    "error_log": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-alinode@2.0.1@egg-alinode/config/config.default.js",
-    "packages": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-alinode@2.0.1@egg-alinode/config/config.default.js",
-    "reconnectDelay": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-alinode@2.0.1@egg-alinode/config/config.default.js",
-    "heartbeatInterval": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-alinode@2.0.1@egg-alinode/config/config.default.js",
-    "reportInterval": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-alinode@2.0.1@egg-alinode/config/config.default.js"
-  },
   "logger": {
-    "dir": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "encoding": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "env": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "level": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "consoleLevel": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "disableConsoleAfterReady": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "outputJSON": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "buffer": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "appLogName": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "coreLogName": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "agentLogName": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "errorLogName": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+    "dir": "G:\\pachong\\config\\config.default.js",
+    "encoding": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "env": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "level": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "consoleLevel": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "outputJSON": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "buffer": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "appLogName": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "coreLogName": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "agentLogName": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "errorLogName": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
     "coreLogger": {
-      "consoleLevel": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.local.js"
+      "consoleLevel": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.local.js"
     },
-    "allowDebugAtProd": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+    "allowDebugAtProd": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "hourDelimiter": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "maxFiles": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "rotateDuration": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "maxDays": "/Users/igola/Documents/hdl/pachong/config/config.default.js",
-    "filesRotateBySize": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-logrotator@3.0.7@egg-logrotator/config/config.default.js",
-    "maxFileSize": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-logrotator@3.0.7@egg-logrotator/config/config.default.js"
+    "filesRotateByHour": "G:\\pachong\\config\\config.default.js",
+    "hourDelimiter": "G:\\pachong\\config\\config.default.js",
+    "maxFiles": "G:\\pachong\\config\\config.default.js",
+    "rotateDuration": "G:\\pachong\\config\\config.default.js",
+    "maxDays": "G:\\pachong\\config\\config.default.js",
+    "filesRotateBySize": "G:\\pachong\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "G:\\pachong\\node_modules\\_egg-logrotator@3.0.7@egg-logrotator\\config\\config.default.js"
   },
   "session": {
-    "maxAge": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
-    "key": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
-    "httpOnly": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
-    "encrypt": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js"
+    "maxAge": "G:\\pachong\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "key": "G:\\pachong\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "httpOnly": "G:\\pachong\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js",
+    "encrypt": "G:\\pachong\\node_modules\\_egg-session@3.1.0@egg-session\\config\\config.default.js"
   },
   "helper": {
-    "shtml": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-security@2.5.0@egg-security/config/config.default.js"
+    "shtml": "G:\\pachong\\node_modules\\_egg-security@2.5.0@egg-security\\config\\config.default.js"
   },
   "jsonp": {
-    "limit": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js",
-    "callback": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js",
-    "csrf": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js"
+    "limit": "G:\\pachong\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "G:\\pachong\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "G:\\pachong\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-onerror@2.1.0@egg-onerror/config/config.default.js",
-    "appErrorFilter": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-onerror@2.1.0@egg-onerror/config/config.default.js",
-    "templatePath": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-onerror@2.1.0@egg-onerror/config/config.default.js"
+    "errorPageUrl": "G:\\pachong\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "G:\\pachong\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "templatePath": "G:\\pachong\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js"
   },
   "watcher": {
-    "type": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.local.js",
+    "type": "G:\\pachong\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.local.js",
     "eventSources": {
-      "default": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.default.js",
-      "development": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.default.js"
+      "default": "G:\\pachong\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.default.js",
+      "development": "G:\\pachong\\node_modules\\_egg-watcher@3.1.0@egg-watcher\\config\\config.default.js"
     }
   },
   "schedule": {
-    "directory": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-schedule@3.6.1@egg-schedule/config/config.default.js"
+    "directory": "G:\\pachong\\node_modules\\_egg-schedule@3.6.1@egg-schedule\\config\\config.default.js"
   },
   "multipart": {
-    "mode": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "autoFields": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "defaultCharset": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "fieldNameSize": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "fieldSize": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "fields": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "fileSize": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "files": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "fileExtensions": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "whitelist": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
-    "tmpdir": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js",
+    "mode": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "autoFields": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fieldSize": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fields": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fileSize": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "files": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "whitelist": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
+    "tmpdir": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js",
     "cleanSchedule": {
-      "cron": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-multipart@2.4.0@egg-multipart/config/config.default.js"
+      "cron": "G:\\pachong\\node_modules\\_egg-multipart@2.4.0@egg-multipart\\config\\config.default.js"
     }
   },
   "development": {
-    "watchDirs": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-development@2.4.2@egg-development/config/config.default.js",
-    "ignoreDirs": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-development@2.4.2@egg-development/config/config.default.js",
-    "fastReady": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-development@2.4.2@egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-development@2.4.2@egg-development/config/config.default.js",
-    "overrideDefault": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-development@2.4.2@egg-development/config/config.default.js"
+    "watchDirs": "G:\\pachong\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js",
+    "ignoreDirs": "G:\\pachong\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js",
+    "fastReady": "G:\\pachong\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "G:\\pachong\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js",
+    "overrideDefault": "G:\\pachong\\node_modules\\_egg-development@2.4.2@egg-development\\config\\config.default.js"
   },
   "static": {
-    "prefix": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
-    "dir": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
-    "dynamic": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
-    "preload": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
-    "buffer": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
-    "maxFiles": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js"
+    "prefix": "G:\\pachong\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dir": "G:\\pachong\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dynamic": "G:\\pachong\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "preload": "G:\\pachong\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "buffer": "G:\\pachong\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "maxFiles": "G:\\pachong\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js"
   },
   "view": {
-    "root": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
-    "cache": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-view@2.1.2@egg-view/config/config.local.js",
-    "defaultExtension": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
-    "defaultViewEngine": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-view-react@2.0.1@beidou-view-react/config/config.default.js",
-    "mapping": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-view@2.1.2@egg-view/config/config.default.js"
+    "root": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "cache": "G:\\pachong\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.local.js",
+    "defaultExtension": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "defaultViewEngine": "G:\\pachong\\node_modules\\_beidou-view-react@2.0.1@beidou-view-react\\config\\config.default.js",
+    "mapping": "G:\\pachong\\node_modules\\_egg-view@2.1.2@egg-view\\config\\config.default.js"
   },
   "router": {
-    "root": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router/config/config.default.js",
-    "urlPrefix": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router/config/config.default.js",
-    "exclude": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router/config/config.default.js",
-    "mapping": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router/config/config.default.js",
-    "entry": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router/config/config.default.js",
-    "exts": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-router@2.0.1@beidou-router/config/config.default.js"
+    "root": "G:\\pachong\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "urlPrefix": "G:\\pachong\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "exclude": "G:\\pachong\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "mapping": "G:\\pachong\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "entry": "G:\\pachong\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js",
+    "exts": "G:\\pachong\\node_modules\\_beidou-router@2.0.1@beidou-router\\config\\config.default.js"
   },
-  "validate": "/Users/igola/Documents/hdl/pachong/node_modules/_egg-validate@2.0.2@egg-validate/config/config.default.js",
-  "env": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/config.default.js",
-  "name": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-  "proxy": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-  "protocolHeaders": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-  "ipHeaders": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-  "hostHeaders": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+  "validate": "G:\\pachong\\node_modules\\_egg-validate@2.0.2@egg-validate\\config\\config.default.js",
+  "env": "G:\\pachong\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js",
+  "name": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+  "proxy": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+  "protocolHeaders": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+  "ipHeaders": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+  "hostHeaders": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
   "pkg": {
-    "name": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "version": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "description": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+    "name": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "version": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "description": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
     "scripts": {
-      "start": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "debug": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "stop": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "dev": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "prod": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "build": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "build:node": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "test": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "start": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "debug": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "stop": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "dev": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "prod": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "build": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "build:node": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "test": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "proxy": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     },
-    "license": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+    "license": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
     "dependencies": {
-      "@babel/plugin-syntax-dynamic-import": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "antd": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "babel-plugin-dynamic-import-node": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "babel-plugin-import": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "babel-polyfill": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "babel-preset-beidou-client": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "beidou": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "beidou-cli": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "dva": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "egg-alinode": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "egg-bcrypt": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "egg-http-proxy": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "egg-jwt": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "egg-logrotator": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "egg-mongoose": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "egg-validate": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "koa-is-json": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "lodash-decorators": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "nodeinstall": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "prop-types": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "react": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "react-dom": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "react-hot-loader": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "react-loadable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "store": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "nightmare": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "query-string": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "path-to-regexp": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "moment": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "babel-plugin-transform-decorators-legacy": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "babel-plugin-import-inspector": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "@babel/plugin-syntax-dynamic-import": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "antd": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "babel-plugin-dynamic-import-node": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "babel-plugin-import": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "babel-polyfill": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "babel-preset-beidou-client": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "beidou": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "beidou-cli": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "dva": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-alinode": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-bcrypt": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-http-proxy": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-jwt": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-logrotator": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-mongoose": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-redis": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-validate": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "koa-is-json": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "lodash-decorators": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "nodeinstall": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "prop-types": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "react": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "react-dom": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "react-hot-loader": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "react-loadable": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "store": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "nightmare": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "query-string": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "path-to-regexp": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "moment": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "babel-plugin-transform-decorators-legacy": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "babel-plugin-import-inspector": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     },
     "devDependencies": {
-      "egg-mock": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "eslint": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "eslint-config-egg": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "egg-development-proxyagent": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "egg-mock": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "eslint": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "eslint-config-egg": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     },
     "engines": {
-      "node": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "node": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     }
   },
-  "baseDir": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-  "HOME": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-  "rundir": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/config.default.js",
+  "baseDir": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+  "HOME": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+  "rundir": "G:\\pachong\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js",
   "dump": {
-    "ignore": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+    "ignore": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "notFound": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "sitefile": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "middlewares": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "httpClient": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+    "bodyparser": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "notFound": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "sitefile": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "middlewares": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "httpClient": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
   },
   "notfound": {
-    "pageUrl": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+    "pageUrl": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+    "/favicon.ico": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
   },
   "bodyParser": {
-    "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "encoding": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "formLimit": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "jsonLimit": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "strict": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+    "enable": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "encoding": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "formLimit": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "jsonLimit": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "strict": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
     "queryString": {
-      "arrayLimit": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "depth": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "parameterLimit": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "arrayLimit": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "depth": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "parameterLimit": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     }
   },
   "httpclient": {
-    "enableDNSCache": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "dnsCacheLookupInterval": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "dnsCacheMaxLength": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+    "enableDNSCache": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
     "request": {
-      "timeout": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "timeout": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "maxSockets": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "maxFreeSockets": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "keepAlive": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "freeSocketTimeout": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "maxSockets": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "maxFreeSockets": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "maxSockets": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "maxFreeSockets": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "keepAlive": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "freeSocketTimeout": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "maxSockets": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "maxFreeSockets": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     }
   },
   "meta": {
-    "enable": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "logging": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+    "enable": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "logging": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
   },
-  "coreMiddleware": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/config.default.js",
-  "workerStartTimeout": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-  "serverTimeout": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
+  "coreMiddleware": "G:\\pachong\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js",
+  "workerStartTimeout": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+  "serverTimeout": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
   "cluster": {
     "listen": {
-      "path": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "port": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-      "hostname": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+      "path": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "port": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+      "hostname": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-    "responseTimeout": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js"
+    "maxWaitTime": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+    "responseTimeout": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js"
   },
-  "onClientError": "/Users/igola/Documents/hdl/pachong/node_modules/_egg@2.20.2@egg/config/config.default.js",
-  "client": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/config.default.js",
+  "onClientError": "G:\\pachong\\node_modules\\_egg@2.20.2@egg\\config\\config.default.js",
+  "client": "G:\\pachong\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js",
   "core": {
-    "name": "/Users/igola/Documents/hdl/pachong/node_modules/_beidou-core@2.0.5@beidou-core/config/config.default.js"
+    "name": "G:\\pachong\\node_modules\\_beidou-core@2.0.5@beidou-core\\config\\config.default.js"
   }
 }

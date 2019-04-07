@@ -11,8 +11,18 @@ const domainWhiteList = [];
   domainWhiteList.push(`http://${localIP}:${port}`);
   domainWhiteList.push(`http://120.77.6.187:8080`);
 });
-module.exports = {
-  security: { domainWhiteList },
+module.exports = () => {
+  const config = {};
+  config.security = {domainWhiteList}
+  if (process.env.http_proxy) {
+    config.httpclient = {
+      request: {
+        enableProxy: true,
+        rejectUnauthorized: false,
+        // proxy: process.env.http_proxy,
+      },
+    };
+  }
   // mongoose: {
   //   url: 'mongodb://localhost:27017/igola-links',
   //   options: {
@@ -22,4 +32,5 @@ module.exports = {
   //     bufferMaxEntries: 0,
   //   },
   // }
+  return config;
 };

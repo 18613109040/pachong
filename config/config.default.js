@@ -8,7 +8,8 @@ module.exports = appInfo => {
     },
     doman: {
       ctrip: 'https://m.ctrip.com',
-      fliggy: 'https://sijipiao.fliggy.com'
+      fliggy: 'https://sijipiao.fliggy.com',
+      fliggyDomestic:'https://sjipiao.fliggy.com',
     },
     webpack: {
       resolve: {
@@ -40,6 +41,14 @@ module.exports = appInfo => {
         bufferMaxEntries: 0,
       },
     },
+    redis: {
+      client: {
+        port: 6379,          // Redis port
+        host: '127.0.0.1',   // Redis host
+        password: '',
+        db: 0,
+      },
+    },
     // 关闭scrf安全策略
     security: {
       csrf: false,
@@ -68,12 +77,12 @@ module.exports = appInfo => {
       },
     },
     // 阿里 nodejs 性能监控平台
-    alinode: {
-      server: 'wss://agentserver.node.aliyun.com:8080',
-      enable: true,
-      appid: '79021',
-      secret: 'a9b6ef1bd9b2038aad949b0cb0a7273712895727'
-    },
+    // alinode: {
+    //   server: 'wss://agentserver.node.aliyun.com:8080',
+    //   enable: true,
+    //   appid: '79021',
+    //   secret: 'a9b6ef1bd9b2038aad949b0cb0a7273712895727'
+    // },
     // 默认日志存放目录 `${appInfo.root}/logs/${appInfo.name}`
     logger: {
       dir: path.join(__dirname, '../logs', appInfo.name),

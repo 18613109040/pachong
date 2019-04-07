@@ -1,11 +1,11 @@
 {
-  "client/components/GlobalFooter/index.module.less": {
-    "globalFooter": "globalFooter_1V4L3",
-    "links": "links_2Iby3",
-    "copyright": "copyright_3gcGQ"
+  "client\\components\\GlobalFooter\\index.module.less": {
+    "globalFooter": "globalFooter_3Iytc",
+    "links": "links_2dzuj",
+    "copyright": "copyright_3ZBmP"
   },
-  "client/index.less": {},
-  "client/layouts/BasicLayout.module.less": {
-    "content": "content_2Qrkn"
+  "client\\index.less": {},
+  "client\\layouts\\BasicLayout.module.less": {
+    "content": "content_kMfLM"
   }
 }

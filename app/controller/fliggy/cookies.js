@@ -15,7 +15,7 @@ class CookiesController extends Controller {
 
   // 创建角色
   async create() {
-    const { ctx, service } = this;
+    const { ctx, service, app } = this;
     // 校验参数
     ctx.validate(this.createCookies);
     // 组装参数
@@ -24,12 +24,16 @@ class CookiesController extends Controller {
     const { cookies } = service.fliggy;
     const res = await cookies.create(payload);
     const msg = '新建cookies成功';
+    //设置redis
+    app.redis.hmset('fliggy:cookies',res._id, JSON.stringify(res))
     // 设置响应内容和响应状态码
     ctx.helper.success({ ctx, res, msg });
   }
   // 获取所有cookies (分页/模糊)
   async index() {
     const { ctx, service } = this;
+    // await app.redis.set('myKey','sssss')
+    // const testValue = await app.redis.get('myKey')
     const { cookies } = service.fliggy;
     // 组装参数
     const payload = ctx.query || {};
@@ -41,7 +45,7 @@ class CookiesController extends Controller {
   }
   // 修改角色
   async update() {
-    const { ctx, service } = this;
+    const { ctx, service, app } = this;
     // 校验参数
     ctx.validate(this.createCookies);
     const { id } = ctx.params;
@@ -49,18 +53,20 @@ class CookiesController extends Controller {
     const payload = ctx.request.body || {};
     const res = await cookies.update(id, payload);
     const msg = '修改cookies成功';
+    app.redis.hmset('fliggy:cookies',res._id, JSON.stringify(res))
     ctx.helper.success({ ctx, res, msg });
 
   }
   // 删除单个角色
   async destroy() {
-    const { ctx, service } = this;
+    const { ctx, service, app } = this;
     // 校验参数
     const { id } = ctx.params;
     // 调用 Service 进行业务处理
     const { cookies } = service.fliggy;
     const res = await cookies.destroy(id);
     const msg = '删除cookies成功';
+    app.redis.hdel('fliggy:cookies',id);
     ctx.helper.success({ ctx, res, msg });
   }
 
